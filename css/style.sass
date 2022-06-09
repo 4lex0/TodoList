@@ -1,0 +1,154 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    background-color: #000
+    width: 100%
+
+i
+    pointer-events: none
+    z-index: 100000
+
+header
+    height: 20vh
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    h1
+        font-size: 3rem
+        color: #fff
+
+form
+    display: flex
+    justify-content: center
+    align-items: center
+    input,button
+        border: none
+        border-radius: 20px
+        padding: 0.5rem 1rem
+        margin: 0.1rem
+        font-size: 1.5rem
+
+input[type="number"]
+    width: 60px
+    text-align: center
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
+
+/* Firefox */
+input[type=number]
+    -moz-appearance: textfield
+
+button
+    cursor: pointer
+    background-color: #fff
+
+.allstars
+    width: 100%
+    height: 100%
+    position: absolute
+
+@keyframes falling
+    0%,100%
+        opacity: 0
+    70%
+        opacity: 1
+    0%
+        transform: translate(100px,0)
+    100%
+        transform: translate(0px,200px)
+
+[class^="star"]
+        width: 3px
+        height: 3px
+        border-radius: 50px
+        background-color: #fff
+        animation: falling 2s infinite
+
+@for $i from 1 through 30
+    .star#{$i}
+        $posX: random()*100%
+        $posY: random()*-80%+50%
+        position: absolute
+        left: $posX
+        top: $posY
+        animation-delay: $i*-0.1s
+
+.sort
+    display: flex
+    position: absolute
+    top: 0
+    left: 80%
+    button
+        border: none
+        padding: 0.25rem 0.5rem
+        font-size: 1.2rem
+        cursor: pointer
+        background-color: #fff
+        color: #000
+        border-radius: 20px
+
+section
+    display: flex
+    flex-direction: column
+    align-items: center
+    div.todo
+        width: 30vw
+        display: flex
+        margin: 0.2rem
+        transition: all 0.1s ease
+        p
+            background-color: #fff
+            color: #000
+            font-size: 1.75rem
+            padding: 0.25rem 0.5rem
+            border-radius: 20px
+        .todo-text
+            width: 50%
+            border-radius: 20px
+        .todo-time
+            width: 20%
+            text-align: center
+            border-radius: 20px
+    button
+        padding: 0.25rem 0.5rem
+        font-size: 1.75rem
+        border: none
+        cursor: pointer
+        color: #fff
+        border-radius: 20px
+        z-index: 10000
+    .complete
+        background-color: #30bd30
+    .trash
+        background-color: #d66f50
+
+.done
+    opacity: 0.5
+    text-decoration: line-through
+
+@keyframes scaleUp
+    from
+        transform: scale(0)
+    to
+        transform: scale(1)
+
+@keyframes scaleDown
+    to
+        -webkit-transform: scale(0)
+        transform: scale(0)
+
+@media screen and (max-width: 768px)
+    form
+        flex-direction: column
+    .sort
+        left: 10vw
+        button
+            font-size: 1rem
