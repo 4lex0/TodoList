@@ -3,8 +3,11 @@
     padding: 0
     box-sizing: border-box
 
+$colorBlack: #000
+$colorWhite: #fff
+
 body
-    background-color: #000
+    background-color: $colorBlack
     width: 100%
 
 i
@@ -19,7 +22,7 @@ header
     position: relative
     h1
         font-size: 3rem
-        color: #fff
+        color: $colorWhite
 
 form
     display: flex
@@ -48,7 +51,7 @@ input[type=number]
 
 button
     cursor: pointer
-    background-color: #fff
+    background-color: $colorWhite
 
 .allstars
     width: 100%
@@ -69,7 +72,7 @@ button
         width: 3px
         height: 3px
         border-radius: 50px
-        background-color: #fff
+        background-color: $colorWhite
         animation: falling 2s infinite
 
 @for $i from 1 through 30
@@ -91,44 +94,49 @@ button
         padding: 0.25rem 0.5rem
         font-size: 1.2rem
         cursor: pointer
-        background-color: #fff
-        color: #000
+        background-color: $colorWhite
+        color: $colorBlack
         border-radius: 20px
 
 section
-    display: flex
-    flex-direction: column
-    align-items: center
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    grid-auto-rows: 200px
+    // flex-direction: column
+    // align-items: center
     div.todo
-        width: 30vw
+        width: 25vw
+        height: 20vh
         display: flex
         margin: 0.2rem
         transition: all 0.1s ease
+        border-radius: 20px
         p
-            background-color: #fff
-            color: #000
-            font-size: 1.75rem
+            background-color: $colorWhite
+            color: $colorBlack
+            font-size: 1.25rem
             padding: 0.25rem 0.5rem
-            border-radius: 20px
         .todo-text
             width: 50%
-            border-radius: 20px
+            padding: 0.25rem 0.5rem
+            border-top-left-radius: 10px
+            border-bottom-left-radius: 10px
         .todo-time
-            width: 20%
-            text-align: center
-            border-radius: 20px
+            width: 30%
+
     button
         padding: 0.25rem 0.5rem
         font-size: 1.75rem
         border: none
         cursor: pointer
-        color: #fff
-        border-radius: 20px
+        color: $colorWhite
         z-index: 10000
     .complete
-        background-color: #30bd30
+        background-image: linear-gradient(to right , #fcff00,#22ff00)
     .trash
-        background-color: #d66f50
+        background-image: linear-gradient(to right , #FF008E ,#ff0000)
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
 
 .done
     opacity: 0.5
@@ -145,10 +153,51 @@ section
         -webkit-transform: scale(0)
         transform: scale(0)
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 968px)
+    form
+        input
+            width: 80%
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+            border-bottom-left-radius: 0px
+            border-bottom-right-radius: 0px
+            margin: 0
+    input[type="number"]
+        width: 80%
+        border-radius: 0px
+    .allstars
+        overflow: hidden
     form
         flex-direction: column
     .sort
-        left: 10vw
         button
             font-size: 1rem
+    section
+        display: grid
+        grid-template-columns: 1fr
+        grid-auto-rows: 300px
+        grid-gap: 40px
+        position: absolute
+        div.todo
+            display: grid
+            position: relative
+            p
+                width: 150px
+                background-color: $colorWhite
+                color: $colorBlack
+                font-size: 1.25rem
+                padding: 0.25rem 0.5rem
+            .todo-text
+                width: 100vw
+                padding: 0.25rem 0.5rem
+                border-top-left-radius: 10px
+                border-top-right-radius: 10px
+                border-bottom-left-radius: 0px
+                text-align: center
+            .todo-time
+                width: 100vw
+                text-align: center
+        .trash
+            border-top-right-radius: 0px
+            border-bottom-right-radius: 10px
+            border-bottom-left-radius: 10px

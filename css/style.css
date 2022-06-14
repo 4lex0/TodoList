@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,35 +16,21 @@ i {
 
 header {
   height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
-
 header h1 {
   font-size: 3rem;
   color: #fff;
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 form input, form button {
   border: none;
   border-radius: 20px;
@@ -54,7 +39,7 @@ form input, form button {
   font-size: 1.5rem;
 }
 
-input[type="number"] {
+input[type=number] {
   width: 60px;
   text-align: center;
 }
@@ -90,12 +75,10 @@ button {
     opacity: 1;
   }
   0% {
-    -webkit-transform: translate(100px, 0);
-            transform: translate(100px, 0);
+    transform: translate(100px, 0);
   }
   100% {
-    -webkit-transform: translate(0px, 200px);
-            transform: translate(0px, 200px);
+    transform: translate(0px, 200px);
   }
 }
 
@@ -107,16 +90,13 @@ button {
     opacity: 1;
   }
   0% {
-    -webkit-transform: translate(100px, 0);
-            transform: translate(100px, 0);
+    transform: translate(100px, 0);
   }
   100% {
-    -webkit-transform: translate(0px, 200px);
-            transform: translate(0px, 200px);
+    transform: translate(0px, 200px);
   }
 }
-
-[class^="star"] {
+[class^=star] {
   width: 3px;
   height: 3px;
   border-radius: 50px;
@@ -127,253 +107,250 @@ button {
 
 .star1 {
   position: absolute;
-  left: 14.77351%;
-  top: -8.72011%;
+  left: 98.699098711%;
+  top: -17.9327413109%;
   -webkit-animation-delay: -0.1s;
           animation-delay: -0.1s;
 }
 
 .star2 {
   position: absolute;
-  left: 49.73234%;
-  top: -6.00809%;
+  left: 23.3731896179%;
+  top: -26.9618403429%;
   -webkit-animation-delay: -0.2s;
           animation-delay: -0.2s;
 }
 
 .star3 {
   position: absolute;
-  left: 14.88859%;
-  top: 14.56306%;
+  left: 51.5861124066%;
+  top: 35.7519761307%;
   -webkit-animation-delay: -0.3s;
           animation-delay: -0.3s;
 }
 
 .star4 {
   position: absolute;
-  left: 84.45303%;
-  top: -10.29466%;
+  left: 21.4513753404%;
+  top: 35.9625388871%;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
 }
 
 .star5 {
   position: absolute;
-  left: 74.11354%;
-  top: -20.10223%;
+  left: 77.2371895228%;
+  top: 6.8192784229%;
   -webkit-animation-delay: -0.5s;
           animation-delay: -0.5s;
 }
 
 .star6 {
   position: absolute;
-  left: 45.13063%;
-  top: -11.48062%;
+  left: 7.2879422517%;
+  top: 1.6086476273%;
   -webkit-animation-delay: -0.6s;
           animation-delay: -0.6s;
 }
 
 .star7 {
   position: absolute;
-  left: 45.59269%;
-  top: 6.28148%;
+  left: 90.5991067969%;
+  top: 0.6698711414%;
   -webkit-animation-delay: -0.7s;
           animation-delay: -0.7s;
 }
 
 .star8 {
   position: absolute;
-  left: 34.05248%;
-  top: 43.42405%;
+  left: 72.7328178081%;
+  top: -9.5305316558%;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
 }
 
 .star9 {
   position: absolute;
-  left: 13.48898%;
-  top: 27.6817%;
+  left: 9.6015582552%;
+  top: 41.1134742357%;
   -webkit-animation-delay: -0.9s;
           animation-delay: -0.9s;
 }
 
 .star10 {
   position: absolute;
-  left: 5.19496%;
-  top: 23.98005%;
+  left: 79.1785127728%;
+  top: -13.4598745165%;
   -webkit-animation-delay: -1s;
           animation-delay: -1s;
 }
 
 .star11 {
   position: absolute;
-  left: 42.91322%;
-  top: 19.11923%;
+  left: 47.066891996%;
+  top: -29.61787406%;
   -webkit-animation-delay: -1.1s;
           animation-delay: -1.1s;
 }
 
 .star12 {
   position: absolute;
-  left: 22.69381%;
-  top: -11.96238%;
+  left: 65.0812633967%;
+  top: 26.9143897304%;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
 }
 
 .star13 {
   position: absolute;
-  left: 56.41794%;
-  top: 39.88985%;
+  left: 28.0712346618%;
+  top: -5.5824876041%;
   -webkit-animation-delay: -1.3s;
           animation-delay: -1.3s;
 }
 
 .star14 {
   position: absolute;
-  left: 42.76711%;
-  top: -0.6206%;
+  left: 18.5383233631%;
+  top: 35.96344152%;
   -webkit-animation-delay: -1.4s;
           animation-delay: -1.4s;
 }
 
 .star15 {
   position: absolute;
-  left: 52.68552%;
-  top: 42.59382%;
+  left: 45.0051572117%;
+  top: 39.2242490624%;
   -webkit-animation-delay: -1.5s;
           animation-delay: -1.5s;
 }
 
 .star16 {
   position: absolute;
-  left: 85.56269%;
-  top: 17.54956%;
+  left: 27.6188309134%;
+  top: 14.0088918627%;
   -webkit-animation-delay: -1.6s;
           animation-delay: -1.6s;
 }
 
 .star17 {
   position: absolute;
-  left: 87.44582%;
-  top: -2.38735%;
+  left: 79.5535941947%;
+  top: 1.227890436%;
   -webkit-animation-delay: -1.7s;
           animation-delay: -1.7s;
 }
 
 .star18 {
   position: absolute;
-  left: 66.50693%;
-  top: 49.53693%;
+  left: 27.719105135%;
+  top: 7.8311377019%;
   -webkit-animation-delay: -1.8s;
           animation-delay: -1.8s;
 }
 
 .star19 {
   position: absolute;
-  left: 18.57036%;
-  top: 14.45662%;
+  left: 72.766572067%;
+  top: -17.0917588314%;
   -webkit-animation-delay: -1.9s;
           animation-delay: -1.9s;
 }
 
 .star20 {
   position: absolute;
-  left: 45.63818%;
-  top: -10.42744%;
+  left: 93.069361325%;
+  top: 37.3783461263%;
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
 }
 
 .star21 {
   position: absolute;
-  left: 41.39445%;
-  top: 15.41526%;
+  left: 16.9208036352%;
+  top: -14.4816695081%;
   -webkit-animation-delay: -2.1s;
           animation-delay: -2.1s;
 }
 
 .star22 {
   position: absolute;
-  left: 18.88643%;
-  top: 25.58647%;
+  left: 53.6635260661%;
+  top: -1.6628523185%;
   -webkit-animation-delay: -2.2s;
           animation-delay: -2.2s;
 }
 
 .star23 {
   position: absolute;
-  left: 70.8078%;
-  top: -12.0403%;
+  left: 62.2777477225%;
+  top: -12.9544302749%;
   -webkit-animation-delay: -2.3s;
           animation-delay: -2.3s;
 }
 
 .star24 {
   position: absolute;
-  left: 85.09633%;
-  top: -14.07474%;
+  left: 28.9299098794%;
+  top: 23.7065361285%;
   -webkit-animation-delay: -2.4s;
           animation-delay: -2.4s;
 }
 
 .star25 {
   position: absolute;
-  left: 3.53457%;
-  top: 32.81772%;
+  left: 64.6057447586%;
+  top: 9.3809560839%;
   -webkit-animation-delay: -2.5s;
           animation-delay: -2.5s;
 }
 
 .star26 {
   position: absolute;
-  left: 19.81466%;
-  top: 18.74926%;
+  left: 99.8790041046%;
+  top: 16.2522544504%;
   -webkit-animation-delay: -2.6s;
           animation-delay: -2.6s;
 }
 
 .star27 {
   position: absolute;
-  left: 20.58485%;
-  top: 27.87269%;
+  left: 53.0215345751%;
+  top: -21.343573474%;
   -webkit-animation-delay: -2.7s;
           animation-delay: -2.7s;
 }
 
 .star28 {
   position: absolute;
-  left: 30.67402%;
-  top: -23.61596%;
+  left: 27.0632341277%;
+  top: 20.5545456282%;
   -webkit-animation-delay: -2.8s;
           animation-delay: -2.8s;
 }
 
 .star29 {
   position: absolute;
-  left: 32.58148%;
-  top: 41.20208%;
+  left: 97.7502983657%;
+  top: 13.6929399511%;
   -webkit-animation-delay: -2.9s;
           animation-delay: -2.9s;
 }
 
 .star30 {
   position: absolute;
-  left: 56.46776%;
-  top: 27.10582%;
+  left: 86.6418162676%;
+  top: 22.3310211407%;
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
 }
 
 .sort {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 0;
   left: 80%;
 }
-
 .sort button {
   border: none;
   padding: 0.25rem 0.5rem;
@@ -385,63 +362,48 @@ button {
 }
 
 section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 200px;
 }
-
 section div.todo {
-  width: 30vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  width: 25vw;
+  height: 20vh;
   display: flex;
   margin: 0.2rem;
-  -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
+  border-radius: 20px;
 }
-
 section div.todo p {
   background-color: #fff;
   color: #000;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 20px;
 }
-
 section div.todo .todo-text {
   width: 50%;
-  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-
 section div.todo .todo-time {
-  width: 20%;
-  text-align: center;
-  border-radius: 20px;
+  width: 30%;
 }
-
 section button {
   padding: 0.25rem 0.5rem;
   font-size: 1.75rem;
   border: none;
   cursor: pointer;
   color: #fff;
-  border-radius: 20px;
   z-index: 10000;
 }
-
 section .complete {
-  background-color: #30bd30;
+  background-image: linear-gradient(to right, #fcff00, #22ff00);
 }
-
 section .trash {
-  background-color: #d66f50;
+  background-image: linear-gradient(to right, #FF008E, #ff0000);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .done {
@@ -451,52 +413,91 @@ section .trash {
 
 @-webkit-keyframes scaleUp {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes scaleUp {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @-webkit-keyframes scaleDown {
   to {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
 }
-
 @keyframes scaleDown {
   to {
-    -webkit-transform: scale(0);
     transform: scale(0);
   }
 }
+@media screen and (max-width: 968px) {
+  form input {
+    width: 80%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0;
+  }
 
-@media screen and (max-width: 768px) {
+  input[type=number] {
+    width: 80%;
+    border-radius: 0px;
+  }
+
+  .allstars {
+    overflow: hidden;
+  }
+
   form {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
-  .sort {
-    left: 10vw;
-  }
+
   .sort button {
     font-size: 1rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 40px;
+    position: absolute;
+  }
+  section div.todo {
+    display: grid;
+    position: relative;
+  }
+  section div.todo p {
+    width: 150px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+  section div.todo .todo-text {
+    width: 100vw;
+    padding: 0.25rem 0.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    text-align: center;
+  }
+  section div.todo .todo-time {
+    width: 100vw;
+    text-align: center;
+  }
+  section .trash {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

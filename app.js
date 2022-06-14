@@ -32,6 +32,7 @@ add.addEventListener("click", e => {
     let time = document.createElement("p");
     time.classList.add("todo-time");
     time.innerText = todoMonth + " / " + todoDate;
+    text.setAttribute("editText", "editText")
     todo.appendChild(text);
     todo.appendChild(time);
 
@@ -226,3 +227,4 @@ sortButton.addEventListener("click", () => {
     // 讀取資料
     loadData();
 })
+
